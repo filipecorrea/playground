@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect",
+        "${workspaceRoot}/index.js"
+      ]
+    },
+    {
+      "name": "Debug Tests",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect",
+        "${workspaceRoot}/node_modules/.bin/jest",
+        "--runInBand",
+        "--watchAll"
+      ]
+    }
+  ]
+}

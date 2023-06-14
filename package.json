@@ -1,0 +1,13 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "Node.js playground",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --watchAll"
+  },
+  "author": "Filipe Correa (http://github.com/filipecorrea)",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
