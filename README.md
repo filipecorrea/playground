@@ -12,8 +12,14 @@ npm i
 
 ## Test
 
-Test code with auto reload running:
+Test code running:
 
 ```bash
 npm test
+```
+
+Test code with auto reload running:
+
+```bash
+npm test:watch
 ```
