@@ -9,6 +9,6 @@
   },
   "author": "Filipe Correa (http://github.com/filipecorrea)",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "29.7.0"
   }
 }
