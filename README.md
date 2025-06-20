@@ -2,6 +2,10 @@
 
 Node.js playground with tests and debug for Visual Studio Code.
 
+## Prerequisites
+
+- Node.js >=18 <=22
+
 ## Setup
 
 Install project dependencies running:
