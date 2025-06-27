@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js playground",
   "engines": {
-    "node": ">=18 <=22"
+    "node": ">=18"
   },
   "scripts": {
     "start": "node index.js",
