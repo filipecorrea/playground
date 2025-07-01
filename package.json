@@ -12,6 +12,6 @@
   },
   "author": "Filipe Correa (http://github.com/filipecorrea)",
   "devDependencies": {
-    "jest": "30.0.2"
+    "jest": "30.0.3"
   }
 }
