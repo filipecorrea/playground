@@ -29,3 +29,23 @@ jobs:
         run: npm run build --if-present
       - name: Test
         run: npm test
+
+  dependencies:
+    name: Dependencies
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Test
+        run: |
+          if [ -f "package-lock.json" ]; then
+            if grep -q '"version": "' package-lock.json && ! grep -q '"from": "git"' package-lock.json; then
+              echo "Dependencies are locked"
+            else
+              echo "Error: dependencies are not locked"
+              exit 1
+            fi
+          else
+            echo "Error: package-lock.json file is missing in app directory"
+            exit 1
+          fi
